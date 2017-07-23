@@ -10,7 +10,7 @@ import UIKit
 
 protocol IOStreamDelegate {
     
-    func output(value: ValueType)
+    func output(value: String)
     func input() -> ValueType?
     
 }
@@ -45,8 +45,8 @@ class ViewController: UIViewController, IOStreamDelegate {
         return nil
     }
     
-    func output(value: ValueType) {
-        self.outputTextField.text = self.outputTextField.text! + "\(value)"
+    func output(value: String) {
+        self.outputTextField.text = self.outputTextField.text! + value
     }
 }
 

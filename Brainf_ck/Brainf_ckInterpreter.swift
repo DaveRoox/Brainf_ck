@@ -39,12 +39,9 @@ public class Brainf_ckInterpreter {
         var brackets = 0
         var command: Character
         
-        print(program)
-        
         while programIndex < program.count {
             
             command = program[programIndex]
-            print(programIndex)
             
             switch command {
                 

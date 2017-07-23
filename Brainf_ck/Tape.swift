@@ -8,7 +8,7 @@
 
 import Foundation
 
-public typealias ValueType = Int
+public typealias ValueType = UInt8
 
 public class Tape {
     
@@ -47,12 +47,12 @@ public class Tape {
         self.values[activeCell] -= 1
     }
     
-    public func printRaw() -> ValueType {
-        return self.activeValue
+    public func printRaw() -> String {
+        return "\(Character(UnicodeScalar(self.activeValue)))"
     }
     
-    public func printInt() -> ValueType {
-        return self.activeValue
+    public func printInt() -> String {
+        return "\(self.activeValue)"
     }
     
     public func input(value: ValueType?) {
