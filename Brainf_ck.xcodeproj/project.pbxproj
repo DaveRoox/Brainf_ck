@@ -12,8 +12,6 @@
 		E700BE771F23E0EE0063CDF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E700BE751F23E0EE0063CDF6 /* Main.storyboard */; };
 		E700BE791F23E0EE0063CDF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E700BE781F23E0EE0063CDF6 /* Assets.xcassets */; };
 		E700BE7C1F23E0EE0063CDF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E700BE7A1F23E0EE0063CDF6 /* LaunchScreen.storyboard */; };
-		E700BE861F23E1120063CDF6 /* Brainf_ckInterpreter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E700BE841F23E1120063CDF6 /* Brainf_ckInterpreter.swift */; };
-		E700BE871F23E1120063CDF6 /* Tape.swift in Sources */ = {isa = PBXBuildFile; fileRef = E700BE851F23E1120063CDF6 /* Tape.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +22,8 @@
 		E700BE781F23E0EE0063CDF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E700BE7B1F23E0EE0063CDF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E700BE7D1F23E0EE0063CDF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E700BE841F23E1120063CDF6 /* Brainf_ckInterpreter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Brainf_ckInterpreter.swift; path = "../../Brainf*ck/Brainf*ck/Brainf_ckInterpreter.swift"; sourceTree = "<group>"; };
-		E700BE851F23E1120063CDF6 /* Tape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Tape.swift; path = "../../Brainf*ck/Brainf*ck/Tape.swift"; sourceTree = "<group>"; };
+		E761BB5A1F24A50D0049F497 /* Tape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tape.swift; sourceTree = "<group>"; };
+		E761BB5B1F24A50D0049F497 /* Brainf_ckInterpreter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brainf_ckInterpreter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,8 +70,8 @@
 		E700BE831F23E0F40063CDF6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				E700BE841F23E1120063CDF6 /* Brainf_ckInterpreter.swift */,
-				E700BE851F23E1120063CDF6 /* Tape.swift */,
+				E761BB5B1F24A50D0049F497 /* Brainf_ckInterpreter.swift */,
+				E761BB5A1F24A50D0049F497 /* Tape.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -151,10 +149,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E700BE861F23E1120063CDF6 /* Brainf_ckInterpreter.swift in Sources */,
 				E700BE741F23E0EE0063CDF6 /* ViewController.swift in Sources */,
 				E700BE721F23E0EE0063CDF6 /* AppDelegate.swift in Sources */,
-				E700BE871F23E1120063CDF6 /* Tape.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +316,7 @@
 				E700BE821F23E0EE0063CDF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
