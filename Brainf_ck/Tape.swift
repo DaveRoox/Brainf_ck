@@ -34,17 +34,21 @@ public class Tape {
     }
     
     public func decrementIndex() {
-        if self.activeCell > 0 {
+        if self.activeCell > 0 { // Gestire questo caso
             self.activeCell = self.activeCell - 1
         }
     }
     
     public func increment() {
-        self.values[activeCell] += 1
+        if self.activeValue < 255 { // Gestire questo caso
+            self.values[activeCell] += 1
+        }
     }
     
     public func decrement() {
-        self.values[activeCell] -= 1
+        if self.activeValue > 0 { // Gestire questo caso
+            self.values[activeCell] -= 1
+        }
     }
     
     public func printRaw() -> String {
